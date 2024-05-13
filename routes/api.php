@@ -26,7 +26,7 @@ use App\Http\Controllers\Api\UserController;
 //     return $request->user();
 // })->middleware('auth:sanctum');
 Route::get('/login',function(){
-    return "GO TO LOGIN" ;
+    return response()->json('Go to login please...') ;
 })->name('login');
 
 Route::post('register',[UserAuthController::class,'register']);
